@@ -241,3 +241,5 @@ python main.py --root_path ~/data --video_path ucf101_videos/jpg --annotation_pa
 --pretrain_path models/resnet-50-kinetics.pth --ft_begin_module fc \
 --model resnet --model_depth 50 --batch_size 128 --n_threads 4 --checkpoint 5
 ```
+#   R e s N e t 3 D  
+ 
