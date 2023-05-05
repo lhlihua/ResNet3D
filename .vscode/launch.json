@@ -1,0 +1,36 @@
+{
+  //configuration
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--root_path", "E:/resnet_data",
+        "--video_path", "jpgs",
+        "--annotation_path", "json/ucf101_01.json",
+        "--result_path", "results",
+        "--dataset", "ucf101",
+        "--n_classes", "101",
+        "--n_pretrain_classes", "400",
+        "--pretrain_path", "models/resnet-50-kinetics.pth",
+        "--ft_begin_module", "fc",
+        "--checkpoint", "5",
+        "--model_depth", "50",
+        "--n_threads", "0",
+        "--batch_size", "8",
+        // "--tensorboard",
+        "--resume_path", "E:/resnet_data/results/save_80.pth",
+        "--n_epochs", "80",
+        // "--inference"
+        // "D:/3D-ResNets-PyTorch/data/txt",
+        // "D:/3D-ResNets-PyTorch/data/jpgs",
+        // "D:/3D-ResNets-PyTorch/data/json"
+      ]
+    }
+  ]
+}
